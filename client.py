@@ -31,7 +31,9 @@ class HDFS:
         url = response.url
         response = requests.put(url=url, data=data())
         if response.status_code == 201:
-            print("")
+            print("File downloaded")
+        else:
+            print("Something went wrong")
 
     def append(self, path, fileName):
         response = requests.post(f"{self.home}{HISTORY_PATH_HDFS[-1]}{fileName}",
