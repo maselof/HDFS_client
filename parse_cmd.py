@@ -21,5 +21,7 @@ def parse_cmd(cmd):
         client.lls()
     elif cmd[0] == "lcd" and len(cmd) == 2:
         client.lcd(cmd[1])
+    elif cmd[0] == "append" and len(cmd) == 3:
+        client.append()
     elif cmd[0] == "exit":
         sys.exit()
