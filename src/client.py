@@ -5,7 +5,7 @@ import utils
 class HDFS:
     def __init__(self, host, port, user):
         self.current_path = "/"
-        self.local_current_path = "/home/shakalyan/unik/4kurs/bigdata/1/HDFS_client/"
+        self.local_current_path = "/home/"
         self.host = host
         self.port = port
         self.user = user
